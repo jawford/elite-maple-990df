@@ -1,0 +1,122 @@
+{
+	"cells": [
+		{
+			"blockId": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e",
+			"data": {
+				"formatCode": false,
+				"isPreviewing": true,
+				"text": "## <span style=\"color: var(--text-color); font-family: var(--font-family); font-size: var(--font-size); font-weight: var(--font-weight);\">Demo project Azimuth</span>"
+			},
+			"id": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e",
+			"type": "markdown"
+		},
+		{
+			"blockId": "f27cab75-9847-4560-8d88-0aa475b7e00f",
+			"data": {
+				"contents": "            <footer id=\"colophon\" className=\"site-footer\">\n              {_.get(this.props, 'pageContext.site.siteMetadata.footer.sections', null) && (\n                (_.size(_.get(this.props, 'pageContext.site.siteMetadata.footer.sections', null)) > 0) && (\n                <div className=\"footer-top outer\">\n                  <div className=\"inner\">\n                    <div className=\"grid footer-widgets\">\n                      {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.sections', null), (section, section_idx) => {\n                          let component = _.upperFirst(_.camelCase(_.get(section, 'type', null)));\n                          let Component = components[component];\n                          return (\n                            <Component key={section_idx} {...this.props} section={section} site={this.props.pageContext.site} />\n                          )\n                      })}\n                    </div>\n                  </div>\n                </div>\n                )\n              )}\n              <div className=\"footer-bottom outer\">\n                <div className=\"inner\">\n                  {(_.get(this.props, 'pageContext.site.siteMetadata.footer.has_nav', null) && _.get(this.props, 'pageContext.site.siteMetadata.footer.nav_links', null)) && (\n                  <div className=\"footer-nav\">\n                    <ul className=\"menu\">\n                      {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.nav_links', null), (action, action_idx) => (\n                      <li key={action_idx} className=\"menu-item\"> \n                        <ActionLink {...this.props} action={action} />\n                      </li>\n                      ))}\n                    </ul>\n                  </div>\n                  )}\n                  <div className=\"site-info\">\n                    {htmlToReact(_.get(this.props, 'pageContext.site.siteMetadata.footer.content', null))}\n                    &nbsp;\n                    {_.map(_.get(this.props, 'pageContext.site.siteMetadata.footer.links', null), (action, action_idx) => (\n                      <ActionLink key={action_idx} {...this.props} action={action} />\n                    ))}\n                  </div>\n                </div>\n              </div>\n            </footer>\n",
+				"file": "src/components/Footer.js",
+				"range": {
+					"end": {
+						"character": 2147483647,
+						"line": 50
+					},
+					"start": {
+						"character": 0,
+						"line": 10
+					}
+				},
+				"scm": {
+					"authors": [
+						{
+							"email": "projects@stackbit.com"
+						}
+					],
+					"branch": "preview",
+					"file": "src/components/Footer.js",
+					"remotes": [
+						{
+							"name": "origin",
+							"url": "github.com/jawford/elite-maple-990df"
+						}
+					],
+					"repoName": "elite-maple-990df",
+					"revision": "128aef05a3aebe9fbb58b18cfdb2654e66fb3b31",
+					"sameRepo": true
+				}
+			},
+			"id": "f27cab75-9847-4560-8d88-0aa475b7e00f",
+			"type": "code",
+			"version": 1
+		},
+		{
+			"blockId": "c526c3db-3589-495a-b2ee-46c327445de2",
+			"data": {
+				"formatCode": false,
+				"isPreviewing": true,
+				"text": "### Footer"
+			},
+			"id": "c526c3db-3589-495a-b2ee-46c327445de2",
+			"type": "markdown"
+		}
+	],
+	"graphViewMetadata": {
+		"edges": [
+			{
+				"id": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e_bottom_c526c3db-3589-495a-b2ee-46c327445de2_top_kXJ4SFCxS9eBNJqlxE0Zpw",
+				"source": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e",
+				"sourceHandle": "bottom",
+				"target": "c526c3db-3589-495a-b2ee-46c327445de2",
+				"targetHandle": "top"
+			},
+			{
+				"id": "c526c3db-3589-495a-b2ee-46c327445de2_bottom_f27cab75-9847-4560-8d88-0aa475b7e00f_top_ANh4fnnMSG6m3K7o8uKpWQ",
+				"source": "c526c3db-3589-495a-b2ee-46c327445de2",
+				"sourceHandle": "bottom",
+				"target": "f27cab75-9847-4560-8d88-0aa475b7e00f",
+				"targetHandle": "top"
+			}
+		],
+		"graph": {
+			"position": [
+				0,
+				0
+			],
+			"zoom": 1
+		},
+		"nodes": [
+			{
+				"blockId": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e",
+				"dimensions": {
+				},
+				"id": "9dd7f36d-5544-4191-b8bc-5f0ae3b0f52e",
+				"position": {
+					"x": 45,
+					"y": 60
+				}
+			},
+			{
+				"blockId": "f27cab75-9847-4560-8d88-0aa475b7e00f",
+				"dimensions": {
+				},
+				"id": "f27cab75-9847-4560-8d88-0aa475b7e00f",
+				"position": {
+					"x": 255,
+					"y": 465
+				}
+			},
+			{
+				"blockId": "c526c3db-3589-495a-b2ee-46c327445de2",
+				"dimensions": {
+				},
+				"id": "c526c3db-3589-495a-b2ee-46c327445de2",
+				"position": {
+					"x": 180,
+					"y": 285
+				}
+			}
+		]
+	},
+	"text": "This is a Gatsby site using Git as a CMS. It was created with Stackbit in under a minute. You can create a site just like this one, or explore some variations.",
+	"title": "Elite-Maple: Stackbit demo",
+	"version": 1
+}
