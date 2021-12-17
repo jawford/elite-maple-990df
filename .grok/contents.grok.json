@@ -1,0 +1,24 @@
+{
+	"f54fac39-a949-4684-acb2-62c514336512": {
+		"filePath": ".grok/f54fac39-a949-4684-acb2-62c514336512.grok.json",
+		"id": "f54fac39-a949-4684-acb2-62c514336512",
+		"lastModifiedCommitHash": "adccef4d42ffe527bd26368243b62f152f84ba2f",
+		"markers": [
+			{
+				"branch": "preview",
+				"commitHash": "128aef05a3aebe9fbb58b18cfdb2654e66fb3b31",
+				"file": "src/components/Footer.js",
+				"location": [
+					10,
+					50
+				],
+				"repo": "elite-maple-990df"
+			}
+		],
+		"modifiedAt": 1629972908580,
+		"originalAuthor": "James Awford",
+		"text": "This is a Gatsby site using Git as a CMS. It was created with Stackbit in under a minute. You can create a site just like this one, or explore some variations.",
+		"title": "Elite-Maple: Stackbit demo",
+		"version": 1
+	}
+}
